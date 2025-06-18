@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Noticias - CECyTEQ Pedro Escobedo</title>
+  <link rel="icon" href="img/cecyteq.png">
+
+  <!-- Estilos CSS Embebidos -->
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f2f2f2;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #007a3d;
+      color: white;
+      padding: 25px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin-bottom: 10px;
+      font-size: 2rem;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 10px;
+    }
+
+    nav ul li {
+      margin: 0 12px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #ffd700;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    section {
+      padding: 30px;
+    }
+
+    h2 {
+      color: #007a3d;
+      margin-bottom: 20px;
+      font-size: 1.8rem;
+    }
+
+    p {
+      text-align: justify;
+      margin-bottom: 20px;
+    }
+
+    .evento {
+      background-color: #e8f5e9;
+      border-left: 6px solid #007a3d;
+      padding: 20px;
+      margin-bottom: 25px;
+      border-radius: 6px;
+      transition: background 0.3s ease;
+    }
+
+    .evento:hover {
+      background-color: #d0f0d5;
+    }
+
+    .evento h3 {
+      margin-bottom: 10px;
+      color: #007a3d;
+    }
+
+    footer {
+      background-color: #004d27;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 50px;
+    }
+
+    @media (max-width: 600px) {
+      nav ul {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      nav ul li {
+        margin: 8px 0;
+      }
+
+      main {
+        margin: 20px;
+        padding: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Encabezado -->
+  <header>
+    <h1>Noticias y Eventos</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="quienes-somos.html">¿Quiénes Somos?</a></li>
+        <li><a href="oferta-academica.html">Oferta Académica</a></li>
+        <li><a href="galeria.html">Galería</a></li>
+        <li><a href="noticias.html">Noticias</a></li>
+        <li><a href="testimonios.html">Testimonios</a></li>
+        <li><a href="formulario.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Contenido principal -->
+  <main>
+    <section id="noticias">
+      <h2>Últimos Eventos</h2>
+      <p>En el CECyTEQ Pedro Escobedo fomentamos la participación activa de nuestros estudiantes mediante eventos académicos, culturales, deportivos y de formación integral. A continuación, algunos de nuestros eventos más recientes:</p>
+
+      <article class="evento">
+        <h3>📚 Feria de Ciencia y Tecnología 2025</h3>
+        <p><strong>Fecha:</strong> 10 de mayo, 2025</p>
+        <p>Estudiantes de todos los semestres presentaron proyectos innovadores que reflejan su creatividad y conocimiento en diversas áreas como robótica, energías renovables, software educativo y más. ¡Gracias a todos por su participación!</p>
+      </article>
+
+      <article class="evento">
+        <h3>🏃‍♀️ Carrera Atlética Escolar</h3>
+        <p><strong>Fecha:</strong> 22 de abril, 2025</p>
+        <p>Más de 100 alumnos participaron en la carrera anual promoviendo la salud y el deporte. Hubo medallas, reconocimientos y una excelente convivencia entre estudiantes, docentes y padres de familia. ¡Felicidades a los ganadores!</p>
+      </article>
+
+      <article class="evento">
+        <h3>🎭 Semana Cultural 2025</h3>
+        <p><strong>Fecha:</strong> 15 al 19 de marzo, 2025</p>
+        <p>Una semana llena de arte, música, teatro y talento estudiantil. Se realizaron concursos de canto, exposiciones de pintura, obras teatrales y presentaciones de danza folclórica. Agradecemos a todos los que hicieron posible este evento.</p>
+      </article>
+
+      <article class="evento">
+        <h3>💻 Taller de Programación Web</h3>
+        <p><strong>Fecha:</strong> 5 de marzo, 2025</p>
+        <p>Alumnos del área de informática participaron en un taller intensivo de desarrollo web, donde aprendieron HTML, CSS y JavaScript de forma práctica, creando sus propios sitios personales.</p>
+      </article>
+
+      <article class="evento">
+        <h3>🌿 Jornada de Reforestación Escolar</h3>
+        <p><strong>Fecha:</strong> 20 de febrero, 2025</p>
+        <p>Como parte de las actividades ecológicas, se llevó a cabo la plantación de más de 50 árboles en el entorno escolar. El objetivo fue fomentar la conciencia ambiental y el trabajo en equipo.</p>
+      </article>
+
+      <article class="evento">
+        <h3>📢 Plática Motivacional con Egresados</h3>
+        <p><strong>Fecha:</strong> 30 de enero, 2025</p>
+        <p>Exalumnos compartieron sus experiencias en la universidad y el campo laboral, motivando a los estudiantes actuales a seguir esforzándose y aprovechar al máximo su formación técnica y académica.</p>
+      </article>
+    </section>
+  </main>
+
+  <!-- Pie de página -->
+  <footer>
+    <p>&copy; 2025 CECyTEQ Pedro Escobedo. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>

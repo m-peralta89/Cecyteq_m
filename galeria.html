@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galería - CECyTEQ Pedro Escobedo</title>
+  <link rel="icon" href="img/cecyteq.png">
+
+  <!-- CSS Embebido -->
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #007a3d;
+      color: white;
+      padding: 25px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin-bottom: 10px;
+      font-size: 2rem;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 15px;
+    }
+
+    nav ul li {
+      margin: 0 12px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #ffd700;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+      background-color: white;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      border-radius: 8px;
+    }
+
+    section {
+      padding: 30px;
+    }
+
+    h2 {
+      color: #007a3d;
+      margin-bottom: 15px;
+    }
+
+    p {
+      margin-bottom: 20px;
+      text-align: justify;
+    }
+
+    .galeria-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .galeria-grid img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease;
+    }
+
+    .galeria-grid img:hover {
+      transform: scale(1.05);
+    }
+
+    footer {
+      background-color: #004d27;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 50px;
+    }
+
+    @media (max-width: 600px) {
+      nav ul {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      nav ul li {
+        margin: 8px 0;
+      }
+
+      main {
+        margin: 20px;
+        padding: 15px;
+      }
+
+      .galeria-grid img {
+        height: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Encabezado -->
+  <header>
+    <h1>Galería Fotográfica</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="quienes-somos.html">¿Quiénes Somos?</a></li>
+        <li><a href="oferta-academica.html">Oferta Académica</a></li>
+        <li><a href="galeria.html">Galería</a></li>
+        <li><a href="noticias.html">Noticias</a></li>
+        <li><a href="testimonios.html">Testimonios</a></li>
+        <li><a href="formulario.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Contenido principal -->
+  <main>
+    <section id="galeria">
+      <h2>Momentos en CECyTEQ</h2>
+      <p>Estas imágenes representan la vida estudiantil, actividades extracurriculares e instalaciones del plantel.</p>
+
+      <div class="galeria-grid">
+        <img src="IMG/feria-ciencias.jpeg" alt="Feria de ciencias">
+        <img src="IMG/laboratorio.jpg" alt="Laboratorio de informática">
+        <img src="IMG/instalaciones.jpg" alt="Vista general de instalaciones">
+        <img src="IMG/deportes.jpg" alt="Torneo deportivo">
+        <img src="IMG/cultura.jpg" alt="Evento cultural">
+        <img src="IMG/equipo.jpg" alt="Equipo de estudiantes">
+      </div>
+    </section>
+  </main>
+
+  <!-- Pie de página -->
+  <footer>
+    <p>&copy; 2025 CECyTEQ Pedro Escobedo. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>
+
